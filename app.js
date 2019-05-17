@@ -51,10 +51,6 @@ if((cpuscore-scorecard_score)>0 && (scorecard_wicket!=7))
         {
             draw();
         }
-    }
-    else{
-        run=getScore();
-        div_scoreRuns.style.fontSize='40px';
         if(run==0)
         {
             
