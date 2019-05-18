@@ -12,14 +12,8 @@ const div_img=document.getElementById("batimg");
 const div_scoreRuns=document.getElementById("ScoreRuns");
 
 CpuScoreBox();
-scorecalculation();
 
 
-
-
-
-function scorecalculation()
-{
 function win()
 {
     div_scoreRuns.style.fontSize='60px';
@@ -51,9 +45,11 @@ if((cpuscore-scorecard_score)>0 && (scorecard_wicket!=7))
         {
             draw();
         }
+    }
+    else{
+        run=getScore();
         if(run==0)
         {
-            
             div_scoreRuns.innerHTML="Its OUT!!!!!"
             scorecard_wicket++;
             span_wicket.innerHTML=scorecard_wicket;
@@ -112,7 +108,6 @@ else
     }
 }
 });
-}
 
 
 
